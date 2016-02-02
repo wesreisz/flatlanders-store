@@ -8,13 +8,12 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="scripts/app.js"></script>
   </head>
-<body class="container" ng-controller="StoreController as store">
-    <div ng-show="!store.product.soldOut" class="product row">
+  <body class="container" ng-controller="StoreController as store">
+    <div class="product row" ng-repeat="product in store.products">
       <h3>
-        {{store.product.name}}
-        <em class="pull-right">${{store.product.price}}</em>
+        {{product.name}}
+        <em class="pull-right">${{product.price}}</em>
       </h3>
-      <button ng-show="store.product.canPurchase">Add to Cart</button>
     </div>
   </body>
 </html>
