@@ -8,6 +8,7 @@
 }
 li{
   list-style: none;
+  display: table; 
 }
 
 li.small-image{
@@ -18,7 +19,13 @@ div.list-group{
   margin: auto;
   width: 650px;
 }
-.img-wrap, .img-thumbnails{
+.img-wrap{
   text-align: center;
   width: 100%;
+}
+.img-thumbnails::before{
+	text-align: center;
+}
+list-group-item div{
+	text-align: center;
 }
