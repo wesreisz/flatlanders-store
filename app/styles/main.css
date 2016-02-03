@@ -15,7 +15,7 @@ li.small-image{
 }
 
 div.list-group{
-  padding: 50px;
+  margin: auto;
   width: 650px;
 }
 .img-wrap, .img-thumbnails{
